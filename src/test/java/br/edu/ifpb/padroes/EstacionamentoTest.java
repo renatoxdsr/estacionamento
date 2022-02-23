@@ -1,7 +1,5 @@
-package br.edu.padroes;
+package br.edu.ifpb.padroes;
 
-import br.edu.ifpb.padroes.Estacionamento;
-import br.edu.ifpb.padroes.Veiculo;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
@@ -17,8 +15,8 @@ public class EstacionamentoTest {
 
     @Test
     public void obterTotalAPagarTeste_hora() {
-        LocalDateTime entrada = LocalDateTime.of(2021, 1, 1, 11, 0, 0);
-        LocalDateTime saida = LocalDateTime.of(2021, 1, 1, 0, 0, 0);
+        LocalDateTime entrada = LocalDateTime.of(2021, 1, 1, 0, 0, 0);
+        LocalDateTime saida = LocalDateTime.of(2021, 1, 1, 11, 0, 0);
         Veiculo veiculo = new Veiculo("ABC-123",  "Chevrolet Onix", "Azul");
         estacionamento.setEntrada(entrada);
         estacionamento.setSaida(saida);
